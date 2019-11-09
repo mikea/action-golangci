@@ -1,0 +1,11 @@
+name: 'golangci-lint'
+description: 'Run golangci-lint'
+inputs:
+  target:  # what to run on
+    description: 'target'
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker://golangci/golangci-lint'
+  args:
+    - ${{ inputs.target }}

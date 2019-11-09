@@ -1,2 +1,3 @@
-# action-golangci
-Github action to run golangci
+# action-golangci-lint
+
+Github action to run golangci-lint

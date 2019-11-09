@@ -8,4 +8,6 @@ runs:
   using: 'docker'
   image: 'docker://golangci/golangci-lint'
   args:
+    - "run"
+    - "-v"
     - ${{ inputs.target }}
